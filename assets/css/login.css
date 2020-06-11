@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+body {
+    background: #367bbbbf;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.loginFormMybillingInfo img {
+    width: 213px;
+}
+
+.loginFormMybillingInfo {
+    color: #fff;
+    float: left;
+    width: 57%;
+    background: #041a44;
+    padding: 40px;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.loginFormSection {
+    background: #fff;
+    margin: 60px auto;
+    border-radius: 14px;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 900px;
+    height: 420px;
+    position: relative;
+}
+
+.loginFormMain {
+    float: left;
+    width: 43%;
+    padding: 40px;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.loginFormMybillingInfo p {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+}
+
+.loginFormMybillingInfo a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 25px;
+    background: #3d9cb2;
+    margin-top: 15px;
+    border-radius: 38px;
+}
+
+.loginFormMain h2 {
+    font-size: 25px;
+    color: #041a44;
+    margin-top: 0px;
+    margin-bottom: 35px;
+}
+
+.loginFormMain form input {
+    display: block;
+    margin-bottom: 38px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #041a44ad;
+    font-size: 16px;
+    padding: 5px 0px;
+    outline: none;
+}
+
+.loginFormMain form button {
+    width: 152px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: #3d9cb2;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+span.loginErrMsg {
+    position: absolute;
+    right: 13px;
+    top: 12px;
+    background: #cc4444;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 4px;
+}
+
+
+/******** Login Page Responsive **********
+
+/************ Tab Size Layout **************/
+
+@media only screen and (max-width: 800px) {
+    .loginFormSection {
+        width: 750px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .loginFormSection {
+        width: 613px;
+        height: auto;
+    }
+}
+
+
+/************ Mobile Size Layout ************/
+
+@media only screen and (max-width: 500px) {
+    .loginFormSection {
+        width: 400px;
+    }
+    .loginFormMybillingInfo {
+        display: none;
+    }
+    .loginFormMain {
+        width: 100%;
+    }
+}
